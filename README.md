@@ -1,6 +1,6 @@
 # FlowerPI Integrations
 
-Community guides for connecting [FlowerPI](https://flower-pi.de) with your existing smart home sensors.
+Community guides for connecting [FlowerPI](https://flower-pi.com) with your existing smart home sensors.
 
 **No extra hardware required** — if your plant sensors are already in Home Assistant, you can push data directly to FlowerPI with a single automation.
 

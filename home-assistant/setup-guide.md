@@ -45,7 +45,7 @@ Add the following at the end of the file:
 ```yaml
 rest_command:
   flowerpi_ingest:
-    url: "https://flower-pi.de/api/sensor-sources/ingest/home-assistant"
+    url: "https://flower-pi.com/api/sensor-sources/ingest/home-assistant"
     method: POST
     headers:
       Content-Type: application/json
