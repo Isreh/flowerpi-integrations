@@ -1,7 +1,7 @@
-# FlowerPI — Home Assistant Integration Guide
+# FlowerPI - Home Assistant Integration Guide
 
 **Tested with:** FYTA sensor · Home Assistant OS 2026.5.1 · FlowerPI 2.0  
-**No extra hardware required** — works with any plant sensor already in Home Assistant (FYTA, Xiaomi Mi Flora, Tuya, Zigbee, and more)
+**No extra hardware required** - works with any plant sensor already in Home Assistant (FYTA, Xiaomi Mi Flora, Tuya, Zigbee, and more)
 
 ---
 
@@ -14,7 +14,7 @@
 
 ---
 
-## Step 1 — Install the File Editor add-on
+## Step 1 - Install the File Editor add-on
 
 Go to **Settings** in Home Assistant.
 
@@ -28,15 +28,15 @@ Click **Apps → Add-on Store**, search for **"File editor"**, install it, and e
 
 ---
 
-## Step 2 — Generate an API key in FlowerPI
+## Step 2 - Generate an API key in FlowerPI
 
 In FlowerPI: **Settings → API → Create new key**
 
-Copy the generated key — you'll need it in the next step.
+Copy the generated key - you'll need it in the next step.
 
 ---
 
-## Step 3 — Add the REST command to configuration.yaml
+## Step 3 - Add the REST command to configuration.yaml
 
 Open the **File Editor** from the sidebar and navigate to `/config/configuration.yaml`.
 
@@ -61,15 +61,15 @@ Save the file (💾 icon top right).
 
 ---
 
-## Step 4 — Restart Home Assistant
+## Step 4 - Restart Home Assistant
 
-Go to **Settings → System → Restart Home Assistant** (the yellow option — no full reboot needed).
+Go to **Settings → System → Restart Home Assistant** (the yellow option - no full reboot needed).
 
 ![HA Restart dialog](./screenshots/04_restart.PNG)
 
 ---
 
-## Step 5 — Find your sensor entity IDs
+## Step 5 - Find your sensor entity IDs
 
 Go to **Settings → Devices & Services → Entities** and search for your plant.
 
@@ -92,7 +92,7 @@ Note down all entity IDs, for example:
 
 ---
 
-## Step 6 — Create the automation
+## Step 6 - Create the automation
 
 Go to **Settings → Automations & Scenes → Create automation**.
 
@@ -160,15 +160,15 @@ Save the automation.
 
 ---
 
-## Step 7 — Test it
+## Step 7 - Test it
 
 Trigger the automation manually: in the automation list, click the three dots → **"Trigger"**.
 
-Then in FlowerPI go to **Settings → Sensor Sources** — `ha_group:MY_PLANT` should appear with a current timestamp.
+Then in FlowerPI go to **Settings → Sensor Sources** - `ha_group:MY_PLANT` should appear with a current timestamp.
 
 ---
 
-## Step 8 — Link the source to your plant
+## Step 8 - Link the source to your plant
 
 In FlowerPI, navigate to your plant → **Edit → Advanced Settings → Data source**.
 
@@ -178,7 +178,7 @@ Select `ha_group:MY_PLANT` and map the metrics:
 - Light → light_lux
 - Battery → battery
 
-Save — done. Readings will now appear directly on the plant page.
+Save - done. Readings will now appear directly on the plant page.
 
 ---
 
